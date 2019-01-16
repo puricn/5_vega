@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+
+<div class="login-page">
+  <div class="form" method = "POST">
+    <form class="register-form" action = "php_actions/register.php" method = "POST">
+      <input type="text" placeholder="name" name = "register_username" id = "register_username_id">
+      <input type="password" placeholder="password" name = "register_password">
+      <input type="text" placeholder="email address" name = "register_email">
+      <button>create</button>
+      <p class="message">Already registered? <a href = "#">Sign In</a></p>
+    </form>
+    
+    <form class="login-form" action = "php_actions/login.php" method = "POST">
+      <input type="text" placeholder="username" name = "login_username">
+      <input type="password" placeholder="password"  name = "login_password">
+      <button>login</button>
+      <p class="message">Not registered? <a href = "#">Create an account</a></p>
+    </form>
+  </div>
+
+  <div>
+    <p id = "paragraph"></p>
+  </div>
+</div>
+
+</body>
+</html>
